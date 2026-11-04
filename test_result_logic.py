@@ -7,8 +7,8 @@ class TestResultLogic(unittest.TestCase):
 
     def test_pass_case(self):
         result = predict_result(70, 85)
-        self.assertEqual(result, "FAIL")
-
+        self.assertEqual(result, "PASS")
+        
     def test_fail_due_to_marks(self):
         result = predict_result(30, 85)
         self.assertEqual(result, "FAIL")
